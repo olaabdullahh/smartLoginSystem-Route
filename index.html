@@ -9,39 +9,29 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="vh-100">
-      <nav class="navbar navbar-expand-lg nav-main position-fixed w-100">
-        <div class="container px-5">
-          <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
-          <button
-            class="navbar-toggler icon-btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="fa-solid fa-bars text-white"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <button
-              class="btn btn-outline-warning ms-auto text-white"
-              id="logoutBtn"
-            >
-              Logout
-            </button>
-          </div>
-        </div>
-      </nav>
-      <div id="Data"
-        class="container d-flex align-items-center justify-content-center vh-100"
+   
+    <section class=" vh-100">
+      <div
+        class="container mt-5 vh-100"
       >
-        
+        <div class="content m-auto p-5">
+          <h2 >Smart Login System</h2>
+          <div class="inputs text-center">
+            <input oninput="validationAllInputs(this)" class="form-control  my-3 validaion" placeholder="Enter your name" type="text" name="name" id="nameBtn">
+            <input oninput="validationAllInputs(this)" class="form-control mb-3 validaion" placeholder="Enter your email" type="email" name="email" id="emailBtn">
+            <input oninput="validationAllInputs(this)" class="form-control mb-4 validaion" placeholder="Enter your password" type="password" name="password" id="passwordBtn">
+            <p id="msgValidation" class="msgValidation d-none"></p>
+            <button class="btn btn-outline-info w-100" id="signup-btn" >Sign Up</button>
+            
+            <span class="d-inline-block text-white mt-4">Don’t have an account? <a href="./login.html" class="text-white text-decoration-none">Signin</a></span>
+        </div>
+        </div>
       </div>
     </section>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/index.js"></script>
+    
   </body>
 </html>

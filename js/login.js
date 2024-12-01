@@ -23,7 +23,7 @@ loginBtn.addEventListener("click", function () {
       localStorage.setItem("currentUserName", user.userName);
       getMessageValidation("Login successful!", "text-success"); // رسالة نجاح  
       setTimeout(function() {
-        window.location = "./index.html";
+        window.location = "./home.html";
       }, 1000);
       break; // الخروج من الحلقة إذا تم العثور على المستخدم  
     }
