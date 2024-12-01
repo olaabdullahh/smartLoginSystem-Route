@@ -1,0 +1,56 @@
+:root{
+    --color-main: rgb(23, 162, 184);
+    --bg-main: #24353F;
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-main);
+}
+.nav-main{
+background-color: var(--bg-main);
+box-shadow: -5px 2px 54px -9px  rgba(0, 0, 0, 1);
+
+}
+.navbar .navbar-toggler{
+    border: 0.2px solid rgba(255, 255, 255, 0.338);
+    outline: none;
+}
+section .container h2{
+    font-size: 40px;
+    color: var(--color-main);
+    text-align: center;
+}
+section .container .content{
+    box-shadow: -5px 2px 54px -9px  rgba(0, 0, 0, 1);
+    width: 60%;
+}
+section .container .content button:hover{
+    color: white;
+}
+section .container .content input{
+background-color: var(--bg-main) ;
+color: white;
+}
+section .container .content input:focus{
+    box-shadow: none;
+}
+section .container .content input::placeholder{
+    color: rgba(255, 255, 255, 0.429);
+}
+section .container .content span a:hover {
+   text-decoration: underline !important;
+}
+#linkLogin{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
